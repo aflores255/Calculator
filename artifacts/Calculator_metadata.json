@@ -478,11 +478,11 @@
 	},
 	"sources": {
 		"Calculator.sol": {
-			"keccak256": "0x610b40ae49cc062317278903c20531c7020eb8f9b46ee61a199c02e35bc5cd39",
+			"keccak256": "0x17f3c058f4b6f23f72941bdcc5b756aa7af3142927fa6ca34da1729f1f42220a",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://020aab2bec3b8c65591b5b8fc1ac436801d17e3b378e7468fc59f1fa11e6604a",
-				"dweb:/ipfs/Qma73dtqN6T4WwvBubYV4Dzu4hxZxwDoRYXHRQCFzQ2MNg"
+				"bzz-raw://fb1b36604d2056200cd203537a99d2f08b29584a3908d6de8ba07d3b0b26df2a",
+				"dweb:/ipfs/QmTjF7LNcMSGANCmDau5NX6PZbYMHFW2pCDqTetqi4c3Ju"
 			]
 		}
 	},

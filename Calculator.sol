@@ -1,9 +1,9 @@
 // 1. License
 // SPDX-License-Identifier: LGPL-3.0-only
-// Solidity version
+//2. Solidity version
 pragma solidity 0.8.24;
 
-// Contract
+//3. Contract
 
 contract Calculator {
 
@@ -33,7 +33,6 @@ contract Calculator {
     event Maximum(uint256 num1, uint256 num2, uint256 result);
     event Average(uint256 num1, uint256 num2, uint256 result);
 
-   
     // External Functions
     function sum(uint256 num1_, uint256 num2_) public returns(uint256 result_){
 
@@ -50,7 +49,7 @@ contract Calculator {
 
     function substraction2(int256 num1_, int256 num2_) public pure returns(int256 result_){
 
-    result_ = substraction_logic2(num1_,num2_);
+        result_ = substraction_logic2(num1_,num2_);
     
     }
 
@@ -93,21 +92,21 @@ contract Calculator {
        
     function module(uint256 num1_, uint256 num2_) public checkPositiveNumbers(num1_,num2_) returns(uint256 result_){
 
-    result_ = num1_ % num2_;
-    emit Module(num1_, num2_, result);
+        result_ = num1_ % num2_;
+        emit Module(num1_, num2_, result);
 
     }
 
     function maximum(uint256 num1_, uint256 num2_) public checkPositiveNumbers(num1_,num2_) returns(uint256 result_){
 
-    result_ = maximum_logic(num1_,num2_);
-    emit Maximum(num1_, num2_, result);
+        result_ = maximum_logic(num1_,num2_);
+        emit Maximum(num1_, num2_, result);
 
     }
 
     function average(uint256 num1_, uint256 num2_) public checkPositiveNumbers(num1_,num2_) returns(uint256 result_){
 
-    result_ = average_logic(num1_,num2_);
+        result_ = average_logic(num1_,num2_);
 
     }
 
