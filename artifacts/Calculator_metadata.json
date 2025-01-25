@@ -142,6 +142,31 @@
 					{
 						"indexed": false,
 						"internalType": "uint256",
+						"name": "num2",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "Multiplication",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "num1",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
 						"name": "result",
 						"type": "uint256"
 					}
@@ -338,10 +363,21 @@
 						"internalType": "uint256",
 						"name": "num1_",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
 					}
 				],
 				"name": "multiplier2",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -478,11 +514,11 @@
 	},
 	"sources": {
 		"Calculator.sol": {
-			"keccak256": "0x17f3c058f4b6f23f72941bdcc5b756aa7af3142927fa6ca34da1729f1f42220a",
+			"keccak256": "0x1f255fe0f6c25ee9856fc8b0643293e84dfcc5fa0eed0eb894f924da119e7ede",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://fb1b36604d2056200cd203537a99d2f08b29584a3908d6de8ba07d3b0b26df2a",
-				"dweb:/ipfs/QmTjF7LNcMSGANCmDau5NX6PZbYMHFW2pCDqTetqi4c3Ju"
+				"bzz-raw://74b2e472d02930716fd354681834b79d9fdab4956c8398bcb5f4add9028001c9",
+				"dweb:/ipfs/QmdCb3zbkuuN24951KcBsSCVpdUQryfF89JP47MRJhrsL4"
 			]
 		}
 	},

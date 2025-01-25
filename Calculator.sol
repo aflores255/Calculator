@@ -32,6 +32,7 @@ contract Calculator {
     event Module(uint256 num1, uint256 num2, uint256 result);
     event Maximum(uint256 num1, uint256 num2, uint256 result);
     event Average(uint256 num1, uint256 num2, uint256 result);
+    event Multiplication(uint256 num1, uint256 num2, uint256 result);
 
     // External Functions
     function sum(uint256 num1_, uint256 num2_) public returns(uint256 result_){
@@ -53,16 +54,17 @@ contract Calculator {
     
     }
 
-    function multiplier(uint256 num1_) public{
+    function multiplier(uint256 num1_) public checkPositiveNumber(num1_){
 
         result = result * num1_;
 
 
     }
 
-    function multiplier2(uint256 num1_) public checkPositiveNumber(num1_){
+    function multiplier2(uint256 num1_, uint256 num2_) public checkPositiveNumbers(num1_,num2_) returns (uint256 result_){
 
-        result = result * num1_;
+        result_ = num1_ * num2_;
+        emit Multiplication(num1_, num2_, result_);
 
     }
 
